@@ -311,7 +311,7 @@ class ProdMenuSeeder extends Seeder
                 'category_id' => $categoryId,
                 'name' => 'Κατώγι Αβέρωφ',
                 'description' => 'Μέτσοβο, Ξηρό, Ποικιλιακός',
-                'price' => 2.00,
+                'price' => 20.00,
                 'is_active' => true,
                 'order' => 2,
                 'created_at' => now(),

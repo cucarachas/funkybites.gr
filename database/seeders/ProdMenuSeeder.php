@@ -669,21 +669,11 @@ class ProdMenuSeeder extends Seeder
             ],
             [
                 'category_id' => $categoryId,
-                'name' => 'Corona',
-                'description' => '',
-                'price' => 5.00,
-                'is_active' => true,
-                'order' => 7,
-                'created_at' => now(),
-                'updated_at' => now()
-            ],
-            [
-                'category_id' => $categoryId,
                 'name' => 'Νερό Θεόνη μικρό',
                 'description' => '',
                 'price' => 0.50,
                 'is_active' => true,
-                'order' => 8,
+                'order' => 7,
                 'created_at' => now(),
                 'updated_at' => now()
             ],
@@ -693,7 +683,7 @@ class ProdMenuSeeder extends Seeder
                 'description' => '',
                 'price' => 1.00,
                 'is_active' => true,
-                'order' => 9,
+                'order' => 8,
                 'created_at' => now(),
                 'updated_at' => now()
             ]

@@ -260,7 +260,7 @@ class ProdMenuSeeder extends Seeder
             [
                 'category_id' => $categoryId,
                 'name' => 'Truffle',
-                'description' => 'Ψωμί Brioche, 100% Μοσχαρίσιος Κιμάς, Μαγιονέζα Τρούφας, Τυρί Τσένταρ, Αποξηραμένο Κρεμμύδι, Iceberg, Chatney Σύκο, Πατάτες Country',
+                'description' => 'Ψωμί Brioche, 100% Μοσχαρίσιος Κιμάς, Μαγιονέζα Τρούφας, Τυρί Τσένταρ, Αποξηραμένο Κρεμμύδι, Iceberg, Chutney Σύκο, Πατάτες Country',
                 'price' => 12.00,
                 'is_active' => true,
                 'order' => 2,

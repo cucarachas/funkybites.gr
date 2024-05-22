@@ -16,6 +16,9 @@
                         Ελλάδα
                     </p>
                     <p class="font-bold text-xl mt-4">
+                        Tel: <a href="tel:2223035548">22230 35548</a>
+                    </p>
+                    <p class="font-bold text-xl mt-4">
                         Email: <a href="mailto:contact@funkybites.com">contact@funkybites.com</a>
                     </p>
                 </address>

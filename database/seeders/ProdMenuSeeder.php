@@ -53,37 +53,44 @@ class ProdMenuSeeder extends Seeder
                 'updated_at' => now()
             ],
             [
-                'name' => 'White Wines',
+                'name' => 'Desserts',
                 'is_active' => true,
                 'order' => 6,
                 'created_at' => now(),
                 'updated_at' => now()
             ],
             [
-                'name' => 'Rose Wines',
+                'name' => 'White Wines',
                 'is_active' => true,
                 'order' => 7,
                 'created_at' => now(),
                 'updated_at' => now()
             ],
             [
-                'name' => 'Red Wines',
+                'name' => 'Rose Wines',
                 'is_active' => true,
                 'order' => 8,
                 'created_at' => now(),
                 'updated_at' => now()
             ],
             [
-                'name' => 'Beers',
+                'name' => 'Red Wines',
                 'is_active' => true,
                 'order' => 9,
                 'created_at' => now(),
                 'updated_at' => now()
             ],
             [
-                'name' => 'Refreshments',
+                'name' => 'Beers',
                 'is_active' => true,
                 'order' => 10,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'name' => 'Refreshments',
+                'is_active' => true,
+                'order' => 11,
                 'created_at' => now(),
                 'updated_at' => now()
             ]
@@ -294,6 +301,31 @@ class ProdMenuSeeder extends Seeder
             ]
         ]);
 
+        // Desserts
+        $categoryId = Category::where('name', 'Desserts')->first()->id;
+        Product::insert([
+            [
+                'category_id' => $categoryId,
+                'name' => 'Cheesecake Oreo',
+                'description' => 'Τραγανή βάση μπισκότου, Κρέμα τυριού με oreo, Πραλίνα με κομμάτια μαύρου μπισκότου',
+                'price' => 6.50,
+                'is_active' => true,
+                'order' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'category_id' => $categoryId,
+                'name' => 'Profiterol',
+                'description' => 'Χειροποίητα σουδάκια γεμισμένα με κρέμα patisserie, Σούπα από σοκολάτα γάλακτος με ρούμι και καραμελωμένα αμύγδαλα',
+                'price' => 7.00,
+                'is_active' => true,
+                'order' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
+            ]
+        ]);
+
         // White Wines
         $categoryId = Category::where('name', 'White Wines')->first()->id;
         Product::insert([
@@ -306,7 +338,7 @@ class ProdMenuSeeder extends Seeder
                 'order' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
-            ],[
+            ], [
                 'category_id' => $categoryId,
                 'name' => 'Λαζαρίδη Ντάμα Κούπα',
                 'description' => 'Δράμα, Ξηρό, Ασύρτικο, Μοσχάτο Αλεξάνδρειας, Cabernet, Ugni Blanc, Ροδίτης',
@@ -555,7 +587,7 @@ class ProdMenuSeeder extends Seeder
                 'category_id' => $categoryId,
                 'name' => 'Άλφα',
                 'description' => '',
-                'price' => 3.00,
+                'price' => 3.50,
                 'is_active' => true,
                 'order' => 1,
                 'created_at' => now(),
@@ -565,7 +597,7 @@ class ProdMenuSeeder extends Seeder
                 'category_id' => $categoryId,
                 'name' => 'Άμστελ',
                 'description' => '',
-                'price' => 3.00,
+                'price' => 3.50,
                 'is_active' => true,
                 'order' => 2,
                 'created_at' => now(),
@@ -573,7 +605,7 @@ class ProdMenuSeeder extends Seeder
             ],
             [
                 'category_id' => $categoryId,
-                'name' => 'Μάμος',
+                'name' => 'Φιξ',
                 'description' => '',
                 'price' => 3.50,
                 'is_active' => true,
@@ -583,7 +615,7 @@ class ProdMenuSeeder extends Seeder
             ],
             [
                 'category_id' => $categoryId,
-                'name' => 'Ηeineken',
+                'name' => 'Μάμος',
                 'description' => '',
                 'price' => 3.50,
                 'is_active' => true,
@@ -593,19 +625,9 @@ class ProdMenuSeeder extends Seeder
             ],
             [
                 'category_id' => $categoryId,
-                'name' => 'Ηeineken 0%',
+                'name' => 'Heineken',
                 'description' => '',
-                'price' => 3.50,
-                'is_active' => true,
-                'order' => 4,
-                'created_at' => now(),
-                'updated_at' => now()
-            ],
-            [
-                'category_id' => $categoryId,
-                'name' => 'Fischer',
-                'description' => '',
-                'price' => 3.50,
+                'price' => 4.00,
                 'is_active' => true,
                 'order' => 5,
                 'created_at' => now(),
@@ -613,9 +635,9 @@ class ProdMenuSeeder extends Seeder
             ],
             [
                 'category_id' => $categoryId,
-                'name' => 'Kaiser',
+                'name' => 'Fischer',
                 'description' => '',
-                'price' => 3.50,
+                'price' => 4.00,
                 'is_active' => true,
                 'order' => 6,
                 'created_at' => now(),
@@ -623,21 +645,11 @@ class ProdMenuSeeder extends Seeder
             ],
             [
                 'category_id' => $categoryId,
-                'name' => 'Corona',
+                'name' => 'Kaiser',
                 'description' => '',
-                'price' => 5.00,
+                'price' => 4.00,
                 'is_active' => true,
                 'order' => 7,
-                'created_at' => now(),
-                'updated_at' => now()
-            ],
-            [
-                'category_id' => $categoryId,
-                'name' => 'Septem mylos',
-                'description' => '',
-                'price' => 5.00,
-                'is_active' => true,
-                'order' => 8,
                 'created_at' => now(),
                 'updated_at' => now()
             ]

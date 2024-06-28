@@ -326,11 +326,31 @@ class ProdMenuSeeder extends Seeder
             ],
             [
                 'category_id' => $categoryId,
+                'name' => 'Cheesecake Oreo',
+                'description' => 'Τραγανή βάση μπισκότου, Κρέμα τυριού με Oreo και πραλίνα με κομμάτια μαύρου μπισκότου',
+                'price' => 6.50,
+                'is_active' => true,
+                'order' => 3,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'category_id' => $categoryId,
                 'name' => 'Profiterol',
                 'description' => 'Χειροποίητα σουδάκια γεμισμένα με κρέμα patisserie, Σούπα από σοκολάτα γάλακτος με ρούμι και καραμελωμένα αμύγδαλα',
                 'price' => 7.00,
                 'is_active' => true,
-                'order' => 3,
+                'order' => 4,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'category_id' => $categoryId,
+                'name' => 'Namelaka',
+                'description' => 'Κρέμα με σοκολάτα γάλακτος αρωματισμένη με καραμέλα, Streusel κακάο, Χώμα και flakes από σοκολάτα γάλακτος',
+                'price' => 7.00,
+                'is_active' => true,
+                'order' => 5,
                 'created_at' => now(),
                 'updated_at' => now()
             ]

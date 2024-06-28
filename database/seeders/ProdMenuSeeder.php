@@ -122,7 +122,7 @@ class ProdMenuSeeder extends Seeder
             [
                 'category_id' => $categoryId,
                 'name' => 'Ελληνική',
-                'description' => 'Ντομάτα, Φέτα, Κρεμμύδι, Αγγούρι, Ελιές, Κάπαρι, Παξιμαδάκι, Πιπεριά, Ελαιόλαδο',
+                'description' => 'Ντομάτα, Φέτα, Κρεμμύδι, Αγγούρι, Ελιές, Κάπαρη, Παξιμαδάκι, Πιπεριά, Ελαιόλαδο',
                 'price' => 7.50,
                 'is_active' => true,
                 'order' => 3,
@@ -232,7 +232,7 @@ class ProdMenuSeeder extends Seeder
             [
                 'category_id' => $categoryId,
                 'name' => 'White',
-                'description' => 'Rigatoni, Κοτόπουλο, Μανιτάρια, Κρέμα Γάλακτος',
+                'description' => 'Rigatoni, Κοτόπουλο, Μανιτάρια, Μέλι, Κρέμα Γάλακτος',
                 'price' => 9.50,
                 'is_active' => true,
                 'order' => 4,
@@ -306,11 +306,21 @@ class ProdMenuSeeder extends Seeder
         Product::insert([
             [
                 'category_id' => $categoryId,
-                'name' => 'Cheesecake Oreo',
-                'description' => 'Τραγανή βάση μπισκότου, Κρέμα τυριού με oreo, Πραλίνα με κομμάτια μαύρου μπισκότου',
+                'name' => 'Mille-Feuille',
+                'description' => 'Καραμελωμενη σφολιάτα, Ελαφριά κρέμα αρωματισμένη με λεμόνι, Σαντιγί και κροκαν αμυγδάλου',
                 'price' => 6.50,
                 'is_active' => true,
                 'order' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'category_id' => $categoryId,
+                'name' => 'Tiramisu',
+                'description' => 'Σαβαγιάρ αρωματισμένα με καφέ, Κρέμα με τυρί μασκαρπόνε και κακάο',
+                'price' => 6.50,
+                'is_active' => true,
+                'order' => 2,
                 'created_at' => now(),
                 'updated_at' => now()
             ],
@@ -320,7 +330,7 @@ class ProdMenuSeeder extends Seeder
                 'description' => 'Χειροποίητα σουδάκια γεμισμένα με κρέμα patisserie, Σούπα από σοκολάτα γάλακτος με ρούμι και καραμελωμένα αμύγδαλα',
                 'price' => 7.00,
                 'is_active' => true,
-                'order' => 2,
+                'order' => 3,
                 'created_at' => now(),
                 'updated_at' => now()
             ]
